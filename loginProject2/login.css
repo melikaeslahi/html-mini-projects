@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.back {
+     background: linear-gradient(90deg, rgba(17, 116, 233, 1) 0%, rgba(0, 212, 255, 1) 100%,
+     rgba(0, 89, 225, 1) 100%);
+}
+
+div {
+    width: 260px;
+    height: 410px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+}
+
+p.header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: .5;
+    text-align: center;
+    margin-top: 40px;
+}
+
+span {
+    color: rgba(17, 116, 233, 1);
+}
+
+input {
+    display: block;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 5px;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid slateblue;
+    border: none;
+    border-bottom: 2px solid skyblue;
+    margin-top: 20px;
+    margin-left: 12px;
+     
+}
+
+input[type=text]:focus {
+    border-bottom: 2px solid rgb(30, 186, 248);
+}
+
+input[type=password]:focus {
+    border-bottom: 2px solid rgb(30, 186, 248);
+}
+
+input[type=email]:focus {
+    border-bottom: 2px solid rgb(30, 186, 248);
+}
+
+input[type=button] {
+    margin-top: 20px;
+    width: 90%;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(17, 116, 233, 1) 0%, rgba(0, 212, 255, 1) 100%, 
+    rgba(0, 89, 225, 1) 100%);
+    margin-left: 12px;
+    outline: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+ 
+p.footer1 {
+    font-size: 14px;
+    font-family: initial;
+    text-align: center;
+    color: black;
+    opacity: .5;
+}
+
+p.footer2 {
+    font-size: 14px;
+    font-family: initial;
+    color: lightskyblue;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,148 @@
+.hambargur-menu{
+    width: 45px;
+    height: 45px;
+   
+     position:fixed;
+    right: 128px;
+    top: 87px;
+   z-index: 300;
+    cursor: pointer;
+
+    .menu{
+         
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        &-line{
+            width: 100%;
+            height: 5px;
+            background-color: $color-primery;
+           margin: 5px 0;
+        
+        }
+      
+    }
+}
+
+.logo {
+    font-size: 60px;
+    color: $color-primery;
+    @include flexlayout;
+    width: 110px;
+    height: 110px;
+    border: 5px solid $color-primery;
+    border-radius: 60px;
+}
+
+.main-name {
+    font-family: $font-sahel;
+    font-size: 30px;
+    color: $color-secondery;
+    @include textstyles;
+    margin: 20px;
+}
+
+.sub-name {
+    font-family: $font-sahel;
+    font-size: 15px;
+    color: $color-secondery;
+    text-align: center;
+    @include textstyles;
+}
+
+.main-heading {
+    font-family: $font-nastaliq;
+    font-size: 50px;
+    color: $color-primery;
+    @include textstyles;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    font-family: $font-sahel;
+    font-size: 30px;
+    color: $color-secondery;
+    @include textstyles;
+    margin-bottom: 40px;
+}
+
+.main-btn {
+    width: 170px;
+    height: 45px;
+    font-family: $font-nastaliq;
+    color: $color-primery;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid $color-primery;
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-primery;
+        color: $color-secondery;
+
+
+    }
+
+}
+
+.card {
+    width: 33.3333%;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+    &:hover .card-averlay{
+        left: 0;
+        transition:left .4s;
+         
+       }
+    .card-averlay {
+        @include flexlayout;
+        @extend %fullspace;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        background-color: rgba($color: $color-primery, $alpha: .3);
+         z-index: 5;
+         
+         
+
+        &-heading{
+            font-family: $font-nastaliq;
+            font-size: 60px;
+            color: $color-primery;
+            @include textstyles;
+            margin-bottom: 0px;
+             
+        }
+        &-paragraph{
+            font-family: $font-sahel;
+            font-size: 30px;
+            color: $color-secondery;
+            @include textstyles;
+            margin-bottom: 10px;
+             
+        }
+        &-btn{
+            width: 100px;
+            height: 40px;
+            font-family: $font-sahel;
+            font-size: 10px;
+            background-color: $color-wite;
+            cursor: pointer;
+            border-radius: 30px;
+            color:$color-primery;
+            border: 2px solid $color-primery;
+            outline: none;
+             
+        }
+    }
+
+    img {
+        @extend %fullspace;
+        object-fit: cover;
+        opacity: .6;
+    }
+}

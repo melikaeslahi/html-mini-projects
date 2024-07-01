@@ -1,0 +1,198 @@
+:root{
+    --bg-color : #ffffff;
+    --bg-btn-orithmetic-operators: #c5dae7;
+    --icon-active: #0096db;
+    --icon-inactive: #004e7b;
+    --bg-keyword: #F6F7F8;    
+    --input-number-bg:#F9FBFF;
+    --input-border-color:  white;
+ }
+
+[data-theme='dark'] {
+    --bg-color : #000707;
+    --toolbar-icon-color :#00b6fc;
+    --bg-btn-orithmetic-operators: #003257;
+    --bg-keyword: #000707;    
+    --icon-active: #0096db;
+    --icon-inactive: #004e7b;
+    --number-color: #ffffff;
+    --input-number-bg:#0B151A;
+    --equal-btn : #0695fb;
+    --darkmode-icon-bg: #003257;
+    --input-border-color: #182125;
+    --result-color: white;
+} 
+  [data-theme='light'] {
+    --bg-color : #ffffff;
+    --toolbar-icon-color : black;
+    --bg-btn-orithmetic-operators: #c5dae7;
+    --bg-keyword: #F6F7F8;    
+    --icon-active: #0096db;
+    --icon-inactive: #004e7b;
+    --number-color: black;
+    --input-number-bg:#F9FBFF;
+    --equal-btn : #0695fb;
+    --darkmode-icon-bg: #f9fbff;
+    --input-border-color:  white;
+    --result-color:  black;
+  }
+*{
+    margin: 0;
+    padding: 0;   
+} 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #c5dae7; 
+    height: 100vh;    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 350px;
+    height: 90%;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    box-shadow:   0 0 15px 5px  #d2e1ec;
+}
+.toolbar{
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+}
+.icons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+.icon{
+    padding: 2px;
+}
+i{
+    font-size: 10px;
+    color: var(--toolbar-icon-color);
+    cursor: pointer;
+
+}
+.time{
+    padding: 10px;
+    font-size: 10px;
+    color: var(--toolbar-icon-color);
+}
+.theme-switch{
+    display: flex;
+    justify-content: space-around;
+    min-width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--darkmode-icon-bg);
+    border-radius: 50px;
+}
+.darkmode{
+    display: flex;
+    justify-content: space-around;
+    min-width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--darkmode-icon-bg);
+    border-radius: 50px;
+}
+.themeBtn{
+    outline: none;
+    border: none;
+    color: var(--icon-active) ;
+    background-color: transparent;
+    
+}
+.moon ,.sun{
+    padding: 5px;
+    font-size: large;
+    color: var(--icon-active) ;
+}
+.fa-moon ,.fa-sun{
+    color: var(--icon-active) ;
+    font-size:  15px;
+}
+.fa-moon,.fa-sun:hover{
+    cursor: pointer;
+}  
+.caculator{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 10px;
+    height: 250px;
+    max-width: 350px;
+    min-width: 100px;
+}
+.calculations p{
+    color: #00b6fc;
+    font-size: 15px;
+}
+.display{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: auto;
+    color: #00b6fc;
+    font-size: 15px;
+    text-align: right;
+    max-width:  100%;
+    min-width: 100%;   
+}
+.result p{
+    font-size: 40px;
+    color:  var(--result-color);  
+}
+.keyword{
+    background-color: var(--bg-keyword);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.btns{
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+}
+tr{
+    text-align: center;
+}
+td{
+    padding: 3px;
+}
+input[type='button']{
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+    font-size: large;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    border-left: 2px  solid  var(--input-border-color);
+    border-top: 2px  solid  var(--input-border-color);    
+}
+.oprators{
+    background-color: var(--bg-btn-orithmetic-operators);
+    color:  var(--number-color);
+}
+.number{
+    background-color: var(--input-number-bg);
+    color:  var(--number-color);
+}
+.equal{
+    background-color: #0695fb;
+    color: white;
+}
+.text-color{
+    color: #0695fb;
+}
+ 
